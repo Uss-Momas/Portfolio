@@ -1,0 +1,229 @@
+* {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+  --svg-color: #837E9F;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+
+  display: grid;
+  grid-template-areas: 
+                    "aside main"
+                    "footer footer";
+  grid-template-columns: 448px 1fr;
+  
+}
+
+.card:hover{
+  background-color: #302f3d6c;
+}
+
+/*ASIDE STYLES*/
+aside {
+  grid-area: aside;
+}
+
+aside .card {
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  width: 348px;
+  margin: 40px 60px 30px 40px;
+}
+/*ASIDE STYLES -> SECTION User*/
+section.user-name-photo {
+  padding: 32px 0px 49px 76px;
+}
+
+img.user-photo {
+  width: 128px;
+  padding-left: 34px;
+  padding-bottom: 30px;
+}
+
+p.user-name {
+  font-size: 23px;
+  font-weight: bold;
+}
+p.user-job {
+  font-size: 13px;
+  font-weight: lighter;
+  padding: 10px 0px 0px 20px;
+}
+
+/*ASIDE STYLES -> Section Contacts*/
+
+section.links-contacts {
+  padding: 30px 40px;
+}
+
+section div.contacts {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+
+  margin-bottom: 20px;
+}
+section div img.svg {
+  margin-right: 20px;
+}
+section a{
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+/*ASIDE STYLES-> Section Technologies*/
+
+section.technologies {
+  padding: 30px 20px;
+}
+
+div.techs{
+  padding-left: 10px; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.type-tech{
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+
+  margin: 0px 10px 10px 0px;
+
+  background-color: var(--bg-techs);
+  border-radius: 30px;
+  
+  width: 86px;
+  height: 24px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/*ASIDE STYLES -> Section Experience*/
+section.experience {
+  padding: 30px 20px;
+}
+/*ASIDE STYLES -> Section Education*/
+section.education {
+  padding: 30px 20px;
+}
+
+section ul.education-institutes{
+  padding: 0px 20px;
+}
+
+/*MAIN STYLES*/
+main {
+  grid-area: main;
+  width: 100%;
+}
+
+main .card{
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+
+  margin: 30px 40px 30px 0px;
+}
+section.my-projects{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 40px;
+  padding: 30px;
+}
+section.projects{
+  display: flex;
+  /*grid-template-areas: "grid-column1 grid-column2";*/
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section div.card{
+  padding: 30px;
+  width: 38.3%;
+}
+
+div.project-title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+p.project-title{
+  font-size: 16px;
+  font-weight: bold;
+
+  margin-left: 16px;
+}
+
+p.project-content{
+  margin: 22px 0 47px 0;
+}
+
+div.project-footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 14px;
+}
+
+div.git-branch-star{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.technologies-used{
+  display: flex;
+  align-items: center;
+
+}
+
+p.project-footer-container-value{
+  margin-left: 8px;
+}
+
+section.recent-posts{
+  padding: 33px 24px;
+}
+
+
+
+p.main-title, section.recent-posts{
+  font-size: 20px;
+  font-weight: bold;
+}
+footer {
+  font-weight: 400;
+  font-size: 14;
+  
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  grid-area: footer;
+}
