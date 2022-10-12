@@ -52,11 +52,11 @@ img.user-photo {
 }
 
 p.user-name {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
 }
 p.user-job {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: lighter;
   padding: 10px 0px 0px 20px;
 }
@@ -70,7 +70,7 @@ section.links-contacts {
 section div.contacts {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 
   margin-bottom: 20px;
@@ -96,7 +96,7 @@ div.techs{
   flex-wrap: wrap;
 }
 div.type-tech{
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   color: black;
 
@@ -115,7 +115,7 @@ div.type-tech{
 }
 
 .title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -188,7 +188,7 @@ div.project-footer-container{
   justify-content: space-between;
   align-items: center;
 
-  font-size: 14px;
+  font-size: 16px;
 }
 
 div.git-branch-star{
@@ -214,12 +214,12 @@ section.recent-posts{
 
 
 p.main-title, section.recent-posts{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 footer {
   font-weight: 400;
-  font-size: 14;
+  font-size: 16px;
   
   margin-bottom: 20px;
 
